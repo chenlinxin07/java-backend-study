@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 父工程基础信息（固定不变） -->
+    <groupId>com.study</groupId>
+    <artifactId>java-backend-study</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <!-- 后续所有子模块都要写在这里，先加第一个模块 -->
+    <modules>
+        <module>java-web</module>
+        <module>ssm</module>
+        <module>springboot</module>
+        <module>mysql-study</module>
+        <module>redis-study</module>
+        <module>mq-study</module>
+        <module>jvm-juc-base</module>
+        <module>algorithm-code</module>
+    </modules>
+
+    <!-- 统一管理所有依赖版本，所有子模块都能用 -->
+    <properties>
+        <!-- 改成你的JDK25，和本地环境完全匹配 -->
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 以下依赖版本不用改，直接保留，方便以后统一管理 -->
+        <servlet.version>4.0.1</servlet.version>
+        <mysql.version>8.0.28</mysql.version>
+        <redis.version>3.8.0</redis.version>
+    </properties>
+
+    <!-- 依赖管理：子模块直接用，不用写版本号 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Servlet（Web项目必备） -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- MySQL驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!-- Redis客户端 -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${redis.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

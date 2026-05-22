@@ -6,8 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mysql-study" />
+        <module name="jvm-juc-base" />
+        <module name="mq-study" />
+        <module name="algorithm-code" />
         <module name="java-web" />
+        <module name="ssm" />
+        <module name="springboot" />
+        <module name="redis-study" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-project02" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
