@@ -12,7 +12,7 @@
     <groupId>com.itheima</groupId>
     <artifactId>springboot2-web-req-resp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-web-req-resp</name>
+    <name>springboot2-web-req-resp</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>

@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/java-web/springboot-web-quickstart/springboot-web-quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/java-web/http-server-demo/pom.xml" />
         <option value="$PROJECT_DIR$/java-web/springboot-web-req-resp/pom.xml" />
+        <option value="$PROJECT_DIR$/java-web/springboot1-web-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/java-web/springboot2-web-req-resp/pom.xml" />
       </list>
     </option>
   </component>
