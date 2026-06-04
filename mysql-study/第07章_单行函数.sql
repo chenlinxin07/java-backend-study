@@ -96,6 +96,7 @@ FROM DUAL;
 SELECT employee_id,NULLIF(LENGTH(first_name),LENGTH(last_name)) "compare"
 FROM employees;
 
+
 #3. 日期和时间函数
 
 #3.1  获取日期、时间
